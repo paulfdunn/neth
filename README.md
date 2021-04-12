@@ -1,4 +1,4 @@
 # neth 
-Package neth provides functions that extend net.
+Package neth is a GO (GOLANG) package that provides functions that extend net.
 
-This package is used by by paulfdunn/rest-app, see that project for example usage.
+This package is used by github.com/paulfdunn/rest-app, see that project for example usage.

@@ -1,4 +1,4 @@
-package util
+package httph
 
 import (
 	"encoding/json"

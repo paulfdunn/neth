@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-func TestHTTPBodyUnmarshal(t *testing.T) {
+func TestBodyUnmarshal(t *testing.T) {
 	id := "this is a test struct"
 	type testStruct struct {
 		ID string
@@ -16,7 +16,7 @@ func TestHTTPBodyUnmarshal(t *testing.T) {
 	tsIn := testStruct{ID: id}
 	tsOut := testStruct{}
 	testServer := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		HTTPBodyUnmarshal(w, r, &tsOut)
+		BodyUnmarshal(w, r, &tsOut)
 	}))
 	defer testServer.Close()
 

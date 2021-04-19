@@ -1,3 +1,6 @@
+// Package httph extends the base http package.
+// httph is hosted at https://github.com/paulfdunn/httph; please see the repo
+// for more information
 package httph
 
 import (
